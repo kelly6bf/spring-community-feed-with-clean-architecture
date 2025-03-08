@@ -79,16 +79,4 @@ class PostTest {
         // when, then
         assertThrows(IllegalArgumentException.class, () -> post.update(otherUser, newPostContent, PostPublicationState.PUBLIC));
     }
-
-//    @Test
-//    void givenPostCreatedWhenUpdateStateThenStateShouldBeUpdated() {
-//        // given
-//        PostPublicationState newPostState = PostPublicationState.PRIVATE;
-//
-//        // when
-//        post.updateState(newPostState);
-//
-//        // then
-//        assertEquals(newPostState, post.getState());
-//    }
 }
